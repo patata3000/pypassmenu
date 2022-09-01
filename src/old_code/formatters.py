@@ -1,3 +1,6 @@
+"""Utilities to format list input."""
+
+
 def format_pass_filename(root_path, filepath):
     return str(filepath.relative_to(str(root_path)).with_suffix(""))
 

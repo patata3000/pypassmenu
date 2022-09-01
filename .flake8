@@ -1,0 +1,6 @@
+[flake8]
+    max-line-length = 80
+    ignore =
+        # Exclude errors conflicting with black
+        # https://black.readthedocs.io/en/latest/faq.html#why-are-flake8-s-e203-and-w503-violated
+        E203, W503

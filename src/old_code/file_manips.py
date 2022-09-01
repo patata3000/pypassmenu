@@ -1,5 +1,6 @@
-from configs import password_store_dir_path, passmenu_data_dir_path
 from formatters import make_username_list
+
+from configs import passmenu_data_dir_path, password_store_dir_path
 
 
 def save_username(usernames_list, username):

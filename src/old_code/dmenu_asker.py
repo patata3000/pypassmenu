@@ -1,7 +1,13 @@
 import subprocess
+
+from command import DmenuCommand
+from file_manips import get_filename_list, get_username_list, save_username
+from formatters import get_formatted_filename_list, make_dmenu_input
+
 from configs import dmenu_cmd, password_store_dir_path
-from file_manips import get_username_list, get_filename_list, save_username
-from formatters import make_dmenu_input, get_formatted_filename_list
+
+
+
 
 
 def ask_password():
@@ -41,6 +47,7 @@ def ask_username():
 
 def ask_filename():
     filename_list = get_filename_list()
+    dmenu_cmd = DmenuCommand()
     formatteds_filename_list = get_formatted_filename_list(
         password_store_dir_path, filename_list
     )
